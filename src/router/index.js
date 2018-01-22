@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Summary from '@/components/Summary'
 import HelloWorld from '@/components/HelloWorld'
 
 
@@ -9,8 +10,11 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'BurnItToEarnIt',
+      components: {
+        default: HelloWorld, 
+        summary: Summary
+      }
     }
   ]
 })

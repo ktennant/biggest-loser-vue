@@ -2,6 +2,9 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
+    <button class="button is-medium is-primary" @click="alert">
+            Launch alert (default)
+        </button>
     <ul>
       <li>
         <a
@@ -89,6 +92,11 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
+    }
+  }, 
+  methods: {
+    alert() {
+        this.$dialog.alert('Everything looks fine!')
     }
   }
 }

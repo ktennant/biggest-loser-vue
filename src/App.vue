@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <h1>Burn It to Earn It!</h1>
+    <router-view />
+    <router-view name="summary" />
   </div>
 </template>
 
