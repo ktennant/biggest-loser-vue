@@ -22,22 +22,22 @@
 </template>
 
 <script>
-    import weight from '../assets/weight.json'
+    import data from '../assets/data.json'
 
-    var persons = [];
-    weight.forEach(element => {
-        persons.push({
-            "name": element.name,
+    // var persons = [];
+    // data.forEach(element => {
+    //     persons.push({
+    //         "name": element.name,
 
-        });
-    });
+    //     });
+    // });
     
-    var tableData = { persons };
+    // var tableData = { persons };
 
     export default {
         data() {
             return { 
-                tableData,
+                tableData: data,
                 isEmpty: false,
                 isBordered: false,
                 isStriped: true,
