@@ -1,4 +1,4 @@
 [
-    { "name": "Helen", "weighins": [ "141.8" ] }, 
-    { "name": "Tim", "weighins": [ "193.2" ]}
+    { "name": "Helen", "weighins": [ "141.8", "141" ] }, 
+    { "name": "Tim", "weighins": [ "193.2", "192.6" ]}
 ]

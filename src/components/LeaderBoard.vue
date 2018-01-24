@@ -13,7 +13,7 @@
 
                 <template slot-scope="props">
                     <b-table-column label="Name">
-                        {{ props.row.name }}
+                        <span>{{ props.row.name }}</span>
                     </b-table-column>
                     <b-table-column label="Starting Weight" centered>
                         <span v-if="props.row.week0==undefined">--</span>
@@ -67,6 +67,9 @@
                         <span v-if="props.row.week12==undefined">--</span>
                         <span v-else>{{ props.row.week12 }}</span>
                     </b-table-column>
+                    <b-table-column label="Total Loss">
+                        <span>{{ props.row.percentageWeightLoss }} | {{ props.row.totalWeightLoss }}</span>
+                    </b-table-column>
                 </template>
             </b-table>
         </div>
@@ -83,10 +86,12 @@
         contestant.name = p.name;
         for (var i=0; i<=12; i++){
             contestant['week'+i] = p.weighins[i];
-            currentWeek = (weighins[i] != undefined) ? i : currentWeek;
+            currentWeek = (p.weighins[i] != undefined) ? i : currentWeek;
         };
-        //get value of previous week - current week
-        //get ratio of current week to week 0
+
+        contestant.totalWeightLoss = p.weighins[0] - p.weighins[currentWeek];
+        contestant.percentageWeightLoss = Math.round((p.weighins[currentWeek] / p.weighins[0]) * 100) / 100;
+
         tableData.push(contestant);
     });    
 
