@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Summary from '@/components/Summary'
+import LeaderBoard from '@/components/LeaderBoard'
 import CurrentWeek from '@/components/CurrentWeek'
 
 
@@ -12,7 +12,7 @@ export default new Router({
       path: '/',
       name: 'BurnItToEarnIt',
       components: {
-        default: Summary, 
+        default: LeaderBoard, 
         currentWeek: CurrentWeek
       }
     }
