@@ -78,11 +78,15 @@
 
     var tableData = [];  
     data.forEach(p => {
+        var currentWeek;
         var contestant = {}
         contestant.name = p.name;
         for (var i=0; i<=12; i++){
-            contestant['week'+i] = p.weighins[i]
+            contestant['week'+i] = p.weighins[i];
+            currentWeek = (weighins[i] != undefined) ? i : currentWeek;
         };
+        //get value of previous week - current week
+        //get ratio of current week to week 0
         tableData.push(contestant);
     });    
 
