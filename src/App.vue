@@ -2,7 +2,7 @@
   <div id="app">
     <h1>Burn It to Earn It!</h1>
     <router-view />
-    <router-view name="summary" />
+    <router-view name="currentWeek" />
   </div>
 </template>
 
