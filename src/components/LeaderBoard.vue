@@ -99,7 +99,7 @@
         contestant.percent_change = Math.abs(Math.round((((p.weighins[currentWeek] / p.weighins[0]) * 100) - 100) * 100) / 100);
         tableData.push(contestant);
     });    
-    console.log(tableData)
+    
     export default {
         data() {
             return {
