@@ -4,10 +4,9 @@ WORKDIR /build
 ENV NODE_ENV production
 RUN npm i --quiet --global vue-cli
 COPY package.json .
-RUN yarn install && \
-    yarn cache clean
+RUN npm i
 COPY . . 
-RUN npm build
+RUN node build/build.js
 
 # Runtime image, should run with express
 FROM node:slim
@@ -16,4 +15,4 @@ COPY ./express/ .
 COPY --from=vue-build /build/dist ./public
 RUN yarn install && yarn cache clean
 EXPOSE 3000
-CMD ["node", "server.js"]
+CMD ["node", "app.js"]
