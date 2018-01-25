@@ -2,6 +2,7 @@
     <section class="section">
         <div class="container">
             <h1 class="title">Summary</h1>
+            <avatar username="Jane Doe"></avatar>
             <b-table
                 :data="isEmpty ? [] : tableData"
                 :bordered="isBordered"
@@ -78,6 +79,7 @@
 
 <script>
     import data from '../assets/data.json'
+    import Avatar from 'vue-avatar'
 
     var tableData = [];  
     data.forEach(p => {
@@ -96,6 +98,7 @@
     });    
 
     export default {
+        components: { Avatar }, 
         data() {
             return {
                 tableData,
