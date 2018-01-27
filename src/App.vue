@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>Burn It to Earn It!</h1>
+    <b-icon icon="fire" size="is-large" type="is-primary"></b-icon>
     <router-view />
     <router-view name="weekly" />
   </div>
