@@ -2,7 +2,7 @@
     <section class="section">
         <div class="container">
             <h1 class="title">Leaderboard</h1>
-            <b-table striped mobile-cards default-sort="percent_change" default-sort-direction="desc" :data="tableData">
+            <b-table striped    default-sort="percent_change" default-sort-direction="desc" :data="tableData">
                 <template slot-scope="props">
                     <b-table-column label="Name">
                         <span>{{ props.row.name }}</span>
@@ -59,10 +59,10 @@
                         <span v-if="props.row.week12==undefined">--</span>
                         <span v-else>{{ props.row.week12 }}</span>
                     </b-table-column>
-                    <b-table-column label="Current Week" class="is-hidden-tablet" centered>
+                    <b-table-column label="Current Week" centered>
                         <span>{{ props.row.current_week }}</span>
                     </b-table-column>
-                    <b-table-column label="Total Loss" field="total_change">
+                    <b-table-column label="Total Loss">
                         <span v-if="props.row.total_change < 0" class="success">
                             {{ props.row.total_change }} lbs
                         </span>
