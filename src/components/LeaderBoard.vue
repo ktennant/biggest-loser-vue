@@ -2,7 +2,7 @@
     <section class="section">
         <div class="container">
             <h1 class="title">Leaderboard</h1>
-            <b-table striped    default-sort="percent_change" default-sort-direction="desc" :data="tableData">
+            <b-table striped mobile-cards default-sort="percent_change" default-sort-direction="desc" :data="tableData">
                 <template slot-scope="props">
                     <b-table-column label="Name">
                         <span>{{ props.row.name }}</span>
@@ -103,7 +103,7 @@
         contestant.current_week = p.weighins[currentWeek];
         tableData.push(contestant);
     });    
-    console.log(tableData)
+
     export default {
         data() {
             return {
