@@ -54,8 +54,8 @@
             contestant.name = p.name;
             contestant.start_weight = p.weighins[i-1];
             contestant.end_weight = p.weighins[i];
-            contestant.total_change = Math.round((p.weighins[i] - p.weighins[0]) * 10) / 10;
-            contestant.percent_change = Math.abs(Math.round((((p.weighins[i] / p.weighins[0]) * 100) - 100) * 100) / 100);;
+            contestant.total_change = Math.round((p.weighins[i] - p.weighins[i-1]) * 10) / 10;
+            contestant.percent_change = Math.abs(Math.round((((p.weighins[i] / p.weighins[i-1]) * 100) - 100) * 100) / 100);;
             contestants.push(contestant);
             currentWeek = (p.weighins[i] != undefined) ? i : currentWeek;
         });
