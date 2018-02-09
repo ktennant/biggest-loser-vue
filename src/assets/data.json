@@ -1,10 +1,10 @@
 [
-    { "name": "Annie", "weighins": [142.6, 142.2, 140.8] }, 
-    { "name": "Clint", "weighins": [193.6, 189.6, 188] }, 
-    { "name": "Helen", "weighins": [141.8, 139.8, 139.2] }, 
-    { "name": "John", "weighins": [195.8, 194.5, 193.6] }, 
-    { "name": "Katie", "weighins": [145, 142, 138.4] }, 
-    { "name": "Keith", "weighins": [172.6, 172, 170.4] }, 
-    { "name": "Sarah", "weighins": [149.2, 145.6, 143.8] }, 
-    { "name": "Tim", "weighins": [193.2, 189.4, 190.6]}
+    { "name": "Annie", "weighins": [142.6, 142.2, 140.8, 140] }, 
+    { "name": "Clint", "weighins": [193.6, 189.6, 188, 185.6] }, 
+    { "name": "Helen", "weighins": [141.8, 139.8, 139.2, 138] }, 
+    { "name": "John", "weighins": [195.8, 194.5, 193.6, 193.6] }, 
+    { "name": "Katie", "weighins": [145, 142, 138.4, 136.4] }, 
+    { "name": "Keith", "weighins": [172.6, 172, 170.4, 170.6] }, 
+    { "name": "Sarah", "weighins": [149.2, 145.6, 143.8, 143.6] }, 
+    { "name": "Tim", "weighins": [193.2, 189.4, 190.6, 189]}
 ]
