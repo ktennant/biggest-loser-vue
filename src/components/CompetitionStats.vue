@@ -1,10 +1,10 @@
 <template>
     <div class="container stats">
         <div>
-            <b-icon icon="currency-usd" custom-class="money"></b-icon>{{ totalMonies }}
+            <b-icon icon="currency-usd" custom-class="money"></b-icon>{{ totalMonies }} pot!
         </div>
         <div>
-            <b-icon icon="pig" custom-class="weight-loss"></b-icon> {{ totalWeightLoss }} lbs.&nbsp;({{ totalPercentageLoss }}%) 
+            <b-icon icon="pig" custom-class="weight-loss"></b-icon> {{ totalWeightLoss }} pounds lost! ({{ totalPercentageLoss }}%) 
         </div>
     </div>
 </template>
@@ -38,7 +38,7 @@
         weeklyEntryFee = 2;
 
     var totalMonies = (((numContestants * currentWeek) * weeklyEntryFee) + penalties).toFixed(2);
-    var totalWeightLoss = Math.round((totalCurrentWeight - totalStartWeight) * 10) / 10;
+    var totalWeightLoss = Math.round((totalStartWeight - totalCurrentWeight) * 10) / 10;
     var totalPercentageLoss = Math.abs(Math.round((((totalCurrentWeight / totalStartWeight) * 100) - 100) * 100) / 100);
 
     export default {
