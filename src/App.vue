@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <b-icon icon="fire" size="is-large" type="is-primary"></b-icon>
+    <router-view name="competitionStats" />
     <router-view />
     <router-view name="weekly" />
   </div>
