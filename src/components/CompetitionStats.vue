@@ -34,8 +34,8 @@
     console.log(totalCurrentWeight);
 
     // todo: get this from data
-    // Tim: 2, Keith: 2, John: 1, Annie: 1
-    var penalties = 6, 
+    // Tim: 2, Keith: 2, John: 2, Annie: 1, Sarah: 1, Clint: 1
+    var penalties = 9, 
         numContestants = Object.keys(data).length, 
         weeklyEntryFee = 2;
 
