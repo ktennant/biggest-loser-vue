@@ -24,7 +24,7 @@
 </style>
 
 <script>
-import data from "../assets/data.json";
+import data from "../assets/2018.json";
 
 var currentWeek = 0;
 while (data[0].weighins[currentWeek] != undefined) {
@@ -41,7 +41,8 @@ data.forEach(p => {
 });
 
 // todo: get this from data
-var penalties = 0,
+// Tim: 2, Keith: 2, John: 2, Annie: 1, Sarah: 1, Clint: 1
+var penalties = 9,
   numContestants = Object.keys(data).length,
   weeklyEntryFee = 2;
 

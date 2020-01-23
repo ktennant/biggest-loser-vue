@@ -55,7 +55,7 @@
 </template>
 
 <script>
-import data from "../assets/data.json";
+import data from "../assets/2018.json";
 
 var weeklyData = [];
 var currentWeek;
