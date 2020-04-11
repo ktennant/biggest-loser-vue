@@ -41,7 +41,7 @@ data.forEach(p => {
 });
 
 // todo: get this from data
-var penalties = 1, // ? Annie 1
+var penalties = 4, // ? Annie 1, Erika 2, Sarah 1
   numContestants = Object.keys(data).length,
   weeklyEntryFee = 2;
 
